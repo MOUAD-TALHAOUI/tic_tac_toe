@@ -3,15 +3,14 @@ let cells = [];
 let winner=0;
 initcells();
 
-let x=0;
-let o=0;
+let xPlayerScore=0;
+let oPlayerScore=0;
 draw();
 function initcells(){
     for (let i = 1; i < 10; i++) {
         
         cells.push({
-          x: i,
-          element: "",
+          element: ""
         });
       }
 }
@@ -25,7 +24,7 @@ function initcells(){
 }
 
 function printscore(){
-     scores="X : "+x+" : " +o +" : O";
+     scores="X : "+xPlayerScore+" : " +oPlayerScore +" : O";
     const scoreh = document.getElementById("score");
     scoreh.innerHTML=`<h1>${scores}</h1>`
 }
@@ -45,13 +44,13 @@ function printscore(){
     for (let i = 1; i < 10; i++) {
        if(i===j){
         cellss.push({
-            x: i,
-            element: `${turn}`,
+            
+            element: `${turn}`
           });
        } else{
         cellss.push({
-          x: i,
-          element: `${""+cells[i-1].element}`,
+          
+          element: `${""+cells[i-1].element}`
         });
       }
     }
@@ -88,18 +87,18 @@ if(cells[0].element===cells[1].element && cells[2].element===cells[1].element &&
     message.innerHTML=`<h1>${turn+" won"}</h1>`;
     winner=1;
     if(turn==="x"){
-        x++;
+        xPlayerScore++;
     }else {
-        o++;
+        oPlayerScore++;
     }
 }else
 if(cells[3].element===cells[4].element && cells[4].element===cells[5].element && cells[5].element!=="" && cells[3].element!=="" && cells[4].element!==""){
     const message = document.getElementById("message");
     message.innerHTML=`<h1>${turn+" won"}</h1>`;winner=1;
     if(turn==="x"){
-        x++;
+        xPlayerScore++;
     }else {
-        o++;
+        oPlayerScore++;
     }
 }else 
 if(cells[6].element===cells[7].element && cells[7].element===cells[8].element 
@@ -108,9 +107,9 @@ if(cells[6].element===cells[7].element && cells[7].element===cells[8].element
     const message = document.getElementById("message");
     message.innerHTML=`<h1>${turn+" won"}</h1>`;winner=1;
     if(turn==="x"){
-        x++;
+        xPlayerScore++;
     }else {
-        o++;
+        oPlayerScore++;
     }
 }else 
 if(cells[0].element===cells[3].element && cells[3].element===cells[6].element
@@ -118,9 +117,9 @@ if(cells[0].element===cells[3].element && cells[3].element===cells[6].element
     const message = document.getElementById("message");
     message.innerHTML=`<h1>${turn+" won"}</h1>`;winner=1;
     if(turn==="x"){
-        x++;
+        xPlayerScore++;
     }else {
-        o++;
+        oPlayerScore++;
     }
 }else 
 if(cells[1].element===cells[4].element && cells[4].element===cells[7].element
@@ -128,9 +127,9 @@ if(cells[1].element===cells[4].element && cells[4].element===cells[7].element
     const message = document.getElementById("message");
     message.innerHTML=`<h1>${turn+" won"}</h1>`;winner=1;
     if(turn==="x"){
-        x++;
+        xPlayerScore++;
     }else {
-        o++;
+        oPlayerScore++;
     }
 }else 
 if(cells[2].element===cells[5].element && cells[5].element===cells[8].element
@@ -138,26 +137,26 @@ if(cells[2].element===cells[5].element && cells[5].element===cells[8].element
     const message = document.getElementById("message");
     message.innerHTML=`<h1>${turn+" won"}</h1>`;winner=1;
     if(turn==="x"){
-        x++;
+        xPlayerScore++;
     }else {
-        o++;
+        oPlayerScore++;
     }
 }else if(cells[0].element===cells[4].element && cells[4].element===cells[8].element
     && cells[0].element!=="" && cells[4].element!=="" && cells[8].element!==""){
     const message = document.getElementById("message");
     message.innerHTML=`<h1>${turn+" won"}</h1>`;winner=1;
     if(turn==="x"){
-        x++;
+        xPlayerScore++;
     }else {
-        o++;
+        oPlayerScore++;
     }
 }else if(cells[6].element===cells[4].element && cells[4].element===cells[2].element
     && cells[6].element!=="" && cells[4].element!=="" && cells[2].element!==""){
     const message = document.getElementById("message");
     message.innerHTML=`<h1>${turn+" won"}</h1>`;winner=1;    if(turn==="x"){
-        x++;
+        xPlayerScore++;
     }else {
-        o++;
+        oPlayerScore++;
     }
 }
 
