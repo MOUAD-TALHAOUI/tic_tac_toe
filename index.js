@@ -84,7 +84,7 @@ function printscore(){
 function  checkwinner(){
 if(cells[0].value===cells[1].value && cells[2].value===cells[1].value && cells[0].value!=="" && cells[2].value!=="" && cells[1].value!==""){
     const message = document.getElementById("message");
-    message.innerHTML=`<h1>${turn+" player won"}</h1>`;
+    message.innerHTML=`<h1>${turn+" player player won"}</h1>`;
     winner=1;
     if(turn==="x"){
         xPlayerScore++;
@@ -94,7 +94,7 @@ if(cells[0].value===cells[1].value && cells[2].value===cells[1].value && cells[0
 }else
 if(cells[3].value===cells[4].value && cells[4].value===cells[5].value && cells[5].value!=="" && cells[3].value!=="" && cells[4].value!==""){
     const message = document.getElementById("message");
-    message.innerHTML=`<h1>${turn+" player won"}</h1>`;winner=1;
+    message.innerHTML=`<h1>${turn+" player player won"}</h1>`;winner=1;
     if(turn==="x"){
         xPlayerScore++;
     }else {
@@ -105,7 +105,7 @@ if(cells[6].value===cells[7].value && cells[7].value===cells[8].value
     && cells[6].value!=="" && cells[7].value!=="" && cells[8].value!==""
     ){
     const message = document.getElementById("message");
-    message.innerHTML=`<h1>${turn+" won"}</h1>`;winner=1;
+    message.innerHTML=`<h1>${turn+" player won"}</h1>`;winner=1;
     if(turn==="x"){
         xPlayerScore++;
     }else {
@@ -115,7 +115,7 @@ if(cells[6].value===cells[7].value && cells[7].value===cells[8].value
 if(cells[0].value===cells[3].value && cells[3].value===cells[6].value
     && cells[0].value!=="" && cells[3].value!=="" && cells[6].value!==""){
     const message = document.getElementById("message");
-    message.innerHTML=`<h1>${turn+" won"}</h1>`;winner=1;
+    message.innerHTML=`<h1>${turn+" player won"}</h1>`;winner=1;
     if(turn==="x"){
         xPlayerScore++;
     }else {
@@ -125,7 +125,7 @@ if(cells[0].value===cells[3].value && cells[3].value===cells[6].value
 if(cells[1].value===cells[4].value && cells[4].value===cells[7].value
     && cells[1].value!=="" && cells[4].value!=="" && cells[7].value!==""){
     const message = document.getElementById("message");
-    message.innerHTML=`<h1>${turn+" won"}</h1>`;winner=1;
+    message.innerHTML=`<h1>${turn+" player won"}</h1>`;winner=1;
     if(turn==="x"){
         xPlayerScore++;
     }else {
@@ -135,7 +135,7 @@ if(cells[1].value===cells[4].value && cells[4].value===cells[7].value
 if(cells[2].value===cells[5].value && cells[5].value===cells[8].value
     && cells[2].value!=="" && cells[5].value!=="" && cells[8].value!==""){
     const message = document.getElementById("message");
-    message.innerHTML=`<h1>${turn+" won"}</h1>`;winner=1;
+    message.innerHTML=`<h1>${turn+" player won"}</h1>`;winner=1;
     if(turn==="x"){
         xPlayerScore++;
     }else {
@@ -144,7 +144,7 @@ if(cells[2].value===cells[5].value && cells[5].value===cells[8].value
 }else if(cells[0].value===cells[4].value && cells[4].value===cells[8].value
     && cells[0].value!=="" && cells[4].value!=="" && cells[8].value!==""){
     const message = document.getElementById("message");
-    message.innerHTML=`<h1>${turn+" won"}</h1>`;winner=1;
+    message.innerHTML=`<h1>${turn+" player won"}</h1>`;winner=1;
     if(turn==="x"){
         xPlayerScore++;
     }else {
@@ -153,7 +153,7 @@ if(cells[2].value===cells[5].value && cells[5].value===cells[8].value
 }else if(cells[6].value===cells[4].value && cells[4].value===cells[2].value
     && cells[6].value!=="" && cells[4].value!=="" && cells[2].value!==""){
     const message = document.getElementById("message");
-    message.innerHTML=`<h1>${turn+" won"}</h1>`;winner=1;    if(turn==="x"){
+    message.innerHTML=`<h1>${turn+" player won"}</h1>`;winner=1;    if(turn==="x"){
         xPlayerScore++;
     }else {
         oPlayerScore++;
