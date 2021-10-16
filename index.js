@@ -84,7 +84,7 @@ function printscore(){
 function  checkwinner(){
 if(cells[0].value===cells[1].value && cells[2].value===cells[1].value && cells[0].value!=="" && cells[2].value!=="" && cells[1].value!==""){
     const message = document.getElementById("message");
-    message.innerHTML=`<h1>${turn+" won"}</h1>`;
+    message.innerHTML=`<h1>${turn+" player won"}</h1>`;
     winner=1;
     if(turn==="x"){
         xPlayerScore++;
